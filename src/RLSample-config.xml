@@ -1,0 +1,21 @@
+<?xml version="1.0"?> 
+<flex-config>
+	<includes>
+		<!-- Bootstrappers -->
+		<symbol>info.tiefenauer.rlsample.custom.app.bootstrap.BootstrapMediators</symbol>
+		<symbol>info.tiefenauer.rlsample.custom.app.bootstrap.BootstrapCommands</symbol>
+		<symbol>info.tiefenauer.rlsample.custom.app.bootstrap.BootstrapModels</symbol>
+		<symbol>info.tiefenauer.rlsample.custom.app.bootstrap.BootstrapValues</symbol>
+		
+		<!-- Views -->
+		<symbol>info.tiefenauer.rlsample.core.addon.mainaddon.architecture.view.phone.HomeView</symbol>
+		<symbol>info.tiefenauer.rlsample.core.addon.mainaddon.architecture.view.tablet.HomeView</symbol>
+<!-- 		<symbol>info.tiefenauer.rlsample.custom.addon.mainaddon.architecture.view.component.NextView_phone</symbol> -->
+		 
+		<!-- Models/Entities -->
+		<symbol>info.tiefenauer.rlsample.custom.app.architecture.model.entity.ApplicationConfiguration</symbol>
+		  
+		<!-- Commands/Controllers -->
+		<symbol>info.tiefenauer.rlsample.custom.addon.settingsaddon.architecture.controller.SettingsCommand</symbol>
+	</includes>
+</flex-config>

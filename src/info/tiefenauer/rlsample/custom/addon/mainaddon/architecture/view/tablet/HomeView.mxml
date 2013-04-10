@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<view:MobileView xmlns:fx="http://ns.adobe.com/mxml/2009" 
+				 xmlns:s="library://ns.adobe.com/flex/spark" 
+				 xmlns:view="info.tiefenauer.rlsample.core.app.architecture.view.*"
+				 title="Custom HomeView (tablet)"
+				 >
+	<fx:Script>
+		<![CDATA[
+			import info.tiefenauer.rlsample.custom.addon.mainaddon.architecture.view.phone.NextView;
+			import flash.utils.getQualifiedClassName;
+			
+			import info.tiefenauer.rlsample.core.app.event.PushViewEvent;
+			
+			protected function onNextBtnClick(event:MouseEvent):void{
+				dispatchEvent(new PushViewEvent(NextView));
+			}
+			
+		]]>
+	</fx:Script>
+	
+	<view:layout>
+		<s:VerticalLayout paddingLeft="10"
+						  paddingTop="10"
+						  paddingRight="10"
+						  gap="10"
+						  />
+	</view:layout>
+	
+	<s:Label width="100%"
+			 styleName="className"
+			 >
+		<s:text>{getQualifiedClassName(this)}</s:text>
+	</s:Label>
+	
+	<s:HGroup>
+		<s:Image source="@Embed(source='assets/cat.jpg')" />
+	</s:HGroup>
+	<s:Button id="nextBtn" 
+			  label="next View"
+			  width="100%"
+			  click="onNextBtnClick(event)"
+			  />
+</view:MobileView>

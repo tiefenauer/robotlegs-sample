@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<fxpProperties abbreviated="false" authoringTool="Flex Builder" compiles="true" parentProject="e9428737-1081-43a2-9f4b-decab94c6a5b" projectUUID="e9428737-1081-43a2-9f4b-decab94c6a5b" pureCatalystProject="false" sdkVersion="4.9.1" uuid="4bc038c9-f37a-4c98-badf-b82678139905" version="15">
+  <projects/>
+  <src/>
+  <swc>
+    <linked location="sdkPlaceHolder" path="sdkPlaceHolder" position="0" uuid="4bc038c9-f37a-4c98-badf-b82678139905"/>
+    <linked location="D:/workspace/flex/Robotlegs-Sample/libs" path="/libs" position="1" uuid="4bc038c9-f37a-4c98-badf-b82678139905"/>
+    <linked location="${DOCUMENTS}/robotlegs-framework-v1.5.2/bin/robotlegs-framework-v1.5.2.swc" path="${DOCUMENTS}/robotlegs-framework-v1.5.2/bin/robotlegs-framework-v1.5.2.swc" position="2" uuid="4bc038c9-f37a-4c98-badf-b82678139905"/>
+  </swc>
+  <misc/>
+  <theme/>
+  <mxmlFormattingPrefs groupAttributesByState="true" maxLineWidth="100" mxmlAlignAttributes="true" mxmlAttributeOrder="id,userLabel,includeIn,excludeFrom,visible,x,y,z,left,right,top,bottom,width,height,minWidth,minHeight,maxWidth,maxHeight,label" mxmlKeepAttributeValuesOrganized="true"/>
+</fxpProperties>

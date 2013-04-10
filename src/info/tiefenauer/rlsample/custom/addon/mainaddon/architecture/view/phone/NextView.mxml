@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:View xmlns:fx="http://ns.adobe.com/mxml/2009" 
+			   xmlns:s="library://ns.adobe.com/flex/spark" 
+			   xmlns:base="info.tiefenauer.rlsample.core.view.base.*"
+			   title="Custom NextView (phone)"
+			   >
+	<fx:Script>
+		<![CDATA[
+			import info.tiefenauer.rlsample.core.app.event.PopViewEvent;
+			protected function onButtonClick(event:MouseEvent):void{
+			}
+			
+			protected function onBackBtnClick(event:MouseEvent):void{
+				dispatchEvent(new PopViewEvent());
+			}
+			
+		]]>
+	</fx:Script>
+	
+	<fx:Declarations>
+		<!-- Place non-visual elements (e.g., services, value objects) here -->
+	</fx:Declarations>
+	
+	<s:layout>
+		<s:VerticalLayout paddingLeft="10"
+						  paddingTop="10"
+						  paddingRight="10"
+						  gap="10"
+						  verticalAlign="middle"
+						  />
+	</s:layout>
+
+	<s:navigationContent>
+		<s:Button id="backBtn"
+				  width="100%"
+				  label="Back"
+				  click="onBackBtnClick(event)"
+				  />
+	</s:navigationContent>
+	
+	<s:Label width="100%"
+			 styleName="className"
+			 >
+		<s:text>{getQualifiedClassName(this)}</s:text>
+	</s:Label>
+	
+	<s:Button label="back"
+			  click="onButtonClick(event)"
+			  />
+</s:View>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:View xmlns:fx="http://ns.adobe.com/mxml/2009" 
+		xmlns:s="library://ns.adobe.com/flex/spark" 
+		title="ExclusiveView (phone)">
+	
+	<s:layout>
+		<s:VerticalLayout paddingLeft="10"
+						  paddingRight="10"
+						  paddingTop="10"
+						  gap="10"
+						  />
+	</s:layout>
+	<fx:Script>
+		<![CDATA[
+			import flash.utils.getQualifiedClassName;
+			
+			import assets.global._;
+			
+			import info.tiefenauer.rlsample.custom.addon.exclusiveaddon.event.ExclusiveEvent;
+			
+			protected function doSomeStuffClick(event:MouseEvent):void{
+				dispatchEvent(new ExclusiveEvent(ExclusiveEvent.DO_SOMETHING_CRAZY));
+			}
+			
+		]]>
+	</fx:Script>
+	
+	<s:Label width="100%">
+		<s:text>{getQualifiedClassName(this)}</s:text>
+	</s:Label>
+	
+	<s:Button id="doStuffBtn"
+			  label="{_('test')}"
+			  click="doSomeStuffClick(event)"
+			  />
+</s:View>
