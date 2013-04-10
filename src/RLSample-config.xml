@@ -10,6 +10,7 @@
 		<!-- Views -->
 		<symbol>info.tiefenauer.rlsample.core.addon.mainaddon.architecture.view.phone.HomeView</symbol>
 		<symbol>info.tiefenauer.rlsample.core.addon.mainaddon.architecture.view.tablet.HomeView</symbol>
+		<symbol>info.tiefenauer.rlsample.custom.addon.mainaddon.architecture.view.tablet.NextView</symbol>
 <!-- 		<symbol>info.tiefenauer.rlsample.custom.addon.mainaddon.architecture.view.component.NextView_phone</symbol> -->
 		 
 		<!-- Models/Entities -->

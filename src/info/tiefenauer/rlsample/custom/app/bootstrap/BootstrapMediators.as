@@ -19,11 +19,12 @@ package info.tiefenauer.rlsample.custom.app.bootstrap
 	import info.tiefenauer.rlsample.core.addon.mainaddon.architecture.view.mediator.HomeViewMediator;
 	import info.tiefenauer.rlsample.core.addon.mainaddon.architecture.view.mediator.NextViewMediator;
 	import info.tiefenauer.rlsample.core.app.bootstrap.BootstrapMediators;
-	import info.tiefenauer.rlsample.custom.addon.exclusiveaddon.architecture.view.phone.ExclusiveView;
 	import info.tiefenauer.rlsample.custom.addon.exclusiveaddon.architecture.view.mediator.ExclusiveViewMediator;
+	import info.tiefenauer.rlsample.custom.addon.exclusiveaddon.architecture.view.phone.ExclusiveView;
 	import info.tiefenauer.rlsample.custom.addon.mainaddon.architecture.view.phone.HomeView;
-	import info.tiefenauer.rlsample.custom.addon.mainaddon.architecture.view.tablet.HomeView;
 	import info.tiefenauer.rlsample.custom.addon.mainaddon.architecture.view.phone.NextView;
+	import info.tiefenauer.rlsample.custom.addon.mainaddon.architecture.view.tablet.HomeView;
+	import info.tiefenauer.rlsample.custom.addon.mainaddon.architecture.view.tablet.NextView;
 	
 	import org.robotlegs.core.IMediatorMap;
 	
@@ -33,7 +34,8 @@ package info.tiefenauer.rlsample.custom.app.bootstrap
 			super(mediatorMap);
 			mediatorMap.mapView(info.tiefenauer.rlsample.custom.addon.mainaddon.architecture.view.phone.HomeView, $(HomeViewMediator));
 			mediatorMap.mapView(info.tiefenauer.rlsample.custom.addon.mainaddon.architecture.view.tablet.HomeView, $(HomeViewMediator));
-			mediatorMap.mapView(NextView, $(NextViewMediator));
+			mediatorMap.mapView(info.tiefenauer.rlsample.custom.addon.mainaddon.architecture.view.phone.NextView, $(NextViewMediator));
+			mediatorMap.mapView(info.tiefenauer.rlsample.custom.addon.mainaddon.architecture.view.tablet.NextView, $(NextViewMediator));
 			mediatorMap.mapView(ExclusiveView, $(ExclusiveViewMediator));
 		}
 	}

@@ -14,6 +14,7 @@
 package info.tiefenauer.rlsample.core.addon.mainaddon.architecture.view.mediator
 {
 	import info.tiefenauer.rlsample.core.app.event.PopViewEvent;
+	import info.tiefenauer.rlsample.custom.addon.mainaddon.architecture.view.DoSomethingAmazingEvent;
 	
 	import org.robotlegs.mvcs.Mediator;
 	
@@ -26,6 +27,7 @@ package info.tiefenauer.rlsample.core.addon.mainaddon.architecture.view.mediator
 		override public function onRegister():void{
 			// view events are re-dispatched to application
 			addViewListener(PopViewEvent.POP_VIEW, dispatch);
+			addViewListener(DoSomethingAmazingEvent.DO_SOMETHING_AMAZING, dispatch);
 			super.onRegister();
 		}
 	}

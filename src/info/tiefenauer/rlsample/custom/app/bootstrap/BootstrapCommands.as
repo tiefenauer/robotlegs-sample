@@ -16,9 +16,11 @@ package info.tiefenauer.rlsample.custom.app.bootstrap
 {
 	import assets.global.$;
 	
-	import info.tiefenauer.rlsample.custom.addon.exclusiveaddon.architecture.controller.ExclusiveCommand;
 	import info.tiefenauer.rlsample.core.app.bootstrap.BootstrapCommands;
+	import info.tiefenauer.rlsample.custom.addon.exclusiveaddon.architecture.controller.ExclusiveCommand;
 	import info.tiefenauer.rlsample.custom.addon.exclusiveaddon.event.ExclusiveEvent;
+	import info.tiefenauer.rlsample.custom.addon.mainaddon.architecture.view.DoSomethingAmazingCommand;
+	import info.tiefenauer.rlsample.custom.addon.mainaddon.architecture.view.DoSomethingAmazingEvent;
 	
 	import org.robotlegs.core.ICommandMap;
 	
@@ -27,6 +29,7 @@ package info.tiefenauer.rlsample.custom.app.bootstrap
 		public function BootstrapCommands(commandMap:ICommandMap){
 			super(commandMap);
 			commandMap.mapEvent(ExclusiveEvent.DO_SOMETHING_CRAZY, $(ExclusiveCommand), ExclusiveEvent);
+			commandMap.mapEvent(DoSomethingAmazingEvent.DO_SOMETHING_AMAZING, $(DoSomethingAmazingCommand), DoSomethingAmazingEvent);
 		}
 	}
 }

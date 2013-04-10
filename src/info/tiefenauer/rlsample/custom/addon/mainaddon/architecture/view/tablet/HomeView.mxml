@@ -6,13 +6,13 @@
 				 >
 	<fx:Script>
 		<![CDATA[
-			import info.tiefenauer.rlsample.custom.addon.mainaddon.architecture.view.phone.NextView;
 			import flash.utils.getQualifiedClassName;
 			
 			import info.tiefenauer.rlsample.core.app.event.PushViewEvent;
+			import info.tiefenauer.rlsample.custom.addon.mainaddon.architecture.view.phone.NextView;
 			
 			protected function onNextBtnClick(event:MouseEvent):void{
-				dispatchEvent(new PushViewEvent(NextView));
+				dispatchEvent(new PushViewEvent(info.tiefenauer.rlsample.custom.addon.mainaddon.architecture.view.phone.NextView));
 			}
 			
 		]]>
