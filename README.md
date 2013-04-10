@@ -80,7 +80,7 @@ Die Views sind komplett eigenständige Views, die aber vom gleichen Mediator bet
 - Falls custom Event-Typen für eine bestehende Event-Klasse benötigt werden, die betreffende Event-Klasse im custom-Package duplizieren  und Ergänzen. BootstrapCommands.as gemäss Anleitung oben duplizieren und neue Event-Typen mit entsprechenden Commands mappen
 
 ##Troubleshooting##
-##Meine customized-Klasse wird gar nicht verwendet!##
+###Meine customized-Klasse wird gar nicht verwendet!###
 Klassen, die nirgendwo referenziert werden, werden vom Compiler rausoptimiert. Falls Custom-Klassen (z.B. eine Custom-View) nicht angezeigt wird, muss sie manuell als Compiler-Argument hinzugefügt werden. Im File /src/RLSample-config.xml muss ein entsprechender Eintrag gemacht werden
 
 ##Links##
