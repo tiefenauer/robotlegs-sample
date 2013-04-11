@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<view:MobileView xmlns:fx="http://ns.adobe.com/mxml/2009" 
+				 xmlns:s="library://ns.adobe.com/flex/spark" 
+				 xmlns:view="info.tiefenauer.rlsample.core.app.architecture.view.*"
+				 title="Custom NextView (tablet)"
+				 >
+	<fx:Script>
+		<![CDATA[
+			import flash.utils.getQualifiedClassName;
+			
+			import info.tiefenauer.rlsample.core.app.event.PopViewEvent;
+			import info.tiefenauer.rlsample.custom.addon.mainaddon.architecture.view.DoSomethingAmazingEvent;
+			
+			protected function onBackBtnClick(event:MouseEvent):void{
+				dispatchEvent(new PopViewEvent());
+			}
+			
+			protected function doSomethingAmazing(event:MouseEvent):void{
+				dispatchEvent(new DoSomethingAmazingEvent());
+			}
+			
+		]]>
+	</fx:Script>
+	
+	<view:navigationContent>
+		<s:Button id="backBtn"
+				  click="onBackBtnClick(event)"
+				  />
+	</view:navigationContent>
+	
+	<view:layout>
+		<s:VerticalLayout paddingLeft="10"
+						  paddingTop="10"
+						  paddingRight="10"
+						  gap="10"
+						  verticalAlign="middle"
+						  />
+	</view:layout>
+	
+	<s:Label width="100%" lineBreak="toFit" maxDisplayedLines="10">
+		<s:text>{getQualifiedClassName(this)}</s:text>
+	</s:Label>
+	
+	<s:Button label="do something amazing"
+			  click="doSomethingAmazing(event)"
+			  />
+</view:MobileView>
